@@ -1,7 +1,7 @@
 # SymPyFME
 
-This library can be used to [project
-polytopes](https://scaron.info/teaching/projecting-polytopes.html) using
+This library can be used to [project a
+polyhedron](https://scaron.info/teaching/projecting-polytopes.html) using
 [Fourier-Motzkin
 elimination](https://en.wikipedia.org/wiki/Fourier–Motzkin_elimination) with
 the two Imbert acceleration theorems. It is implemented in Python using
@@ -12,27 +12,20 @@ this method.
 ## Trying out variable eliminations
 
 SymPyFME was mainly designed as a *graphical tool* to help a human user explore
-various variable-elimination schemes to project a polytope given in symbolic
-form. The user can explore the [directed acyclic
+various variable-elimination schemes to project a polyhedral cone given in
+symbolic form. The user can explore the [directed acyclic
 graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG) of
 variable-elimination sequences, adding if-then-else nodes to the graph when
-desired. A calculation DAG can be plotted at any time using
-[GraphViz](http://www.graphviz.org/) by calling:
+desired. 
 
-```python
-dag.savefig("elim-dag.pdf")
-```
+## Example
 
-It is also possible to tell the library to explore all possible computations
-(at the cost of a tremendous computation time) by:
-
-```python
-dag.pivot_all()
-```
-
-The result of a full DAG compilation is either a single inequality system, or a
-tree with if-then-else tests as internal nodes and inequality systems as
-external nodes.
+This library is related to the [derivation of single-contact frictional wrench
+cones](https://scaron.info/research/icra-2015.html) used in robotics to
+alleviate computations caused by redundant contact-point models. The
+step-by-step example ``wrench_cone.py`` derives automatically the calculations
+from the Appendix of this paper. You should start from there for a first
+contact with the (rudimentary) GUI.
 
 ## Related libraries
 
