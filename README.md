@@ -29,9 +29,14 @@ contact with the (rudimentary) GUI.
 
 ## Related libraries
 
-For better performance on numerical systems, you can check out one of these
-libraries:
+For better performance on numerical systems, you can use the *double
+description method* as detailed e.g.
+[here](https://scaron.info/teaching/projecting-polytopes.html#double-description-method).
+A number of libraries implement this algorithm (or, similarly, the vertex
+enumeration/convex hull ones):
 
-- [PANDA](http://comopt.ifi.uni-heidelberg.de/software/PANDA/)
-- [cdd](https://www.inf.ethz.ch/personal/fukudak/cdd_home/index.html) or [pycddlib](https://github.com/mcmtroffaes/pycddlib))
+- [cdd](https://www.inf.ethz.ch/personal/fukudak/cdd_home/index.html) (C) or [pycddlib](https://github.com/mcmtroffaes/pycddlib) (Python)
 - [lrs](http://cgm.cs.mcgill.ca/~avis/C/lrs.html)
+- [panda](http://comopt.ifi.uni-heidelberg.de/software/PANDA/)
+- [ppl](http://bugseng.com/products/ppl/) (C++) or [pyparma](https://github.com/haudren/pyparma) (Python)
+- [qhull](http://qhull.org/)
