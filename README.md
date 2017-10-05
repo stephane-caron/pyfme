@@ -30,7 +30,7 @@ contact with the (rudimentary) GUI.
 ## Related libraries
 
 For better performance on numerical systems, you can use the *double
-description method* as detailed e.g.
+description method* as detailed *e.g.*
 [here](https://scaron.info/teaching/projecting-polytopes.html#double-description-method).
 A number of libraries implement this algorithm (or, similarly, the vertex
 enumeration/convex hull ones):
